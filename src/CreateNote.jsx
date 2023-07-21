@@ -36,7 +36,7 @@ const CreateNote = (props) => {
       <button
         onClick={() => {
           axios
-            .post("http://localhost:3000/", note);
+            .post("https://keeper-app-backend-1d3c.onrender.com/", note);
           setNote({ title: "", note: "" });
           setCheckClick(false);
           
