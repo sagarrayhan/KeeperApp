@@ -7,7 +7,7 @@ import axios from "axios";
 import "./App.css"
 const App = () => {
   const [notes, setNotes] = useState([]);
-  axios.get("https://keeper-app-backend-1d3c.onrender.com").then((dbData) => {
+  axios.get("https://keeperappbackend-ug53.onrender.com").then((dbData) => {
     setNotes(dbData.data);
   });
 
